@@ -1,5 +1,5 @@
 server:
-  port: 8081
+  port: 8082
 spring:
   application:
     name: company-service
@@ -13,7 +13,7 @@ spring:
     hibernate:
       ddl-auto: update
 
-company:
+user:
   service:
     url: http://localhost:8082
 
