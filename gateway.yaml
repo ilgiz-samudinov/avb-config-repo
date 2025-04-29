@@ -5,21 +5,15 @@ spring:
   cloud:
     gateway:
       routes:
-        # Роутинг для user-service
         - id: user-service
           uri: lb://user-service
           predicates:
-            - Path=/users/**
-          filters:
-            - RewritePath=/users/(?<segment>.*), /api/users/${segment}
+            - Path=/api/users/**
 
-        # Роутинг для company-service
         - id: company-service
           uri: lb://company-service
           predicates:
-            - Path=/companies/**
-          filters:
-            - RewritePath=/companies/(?<segment>.*), /api/companies/${segment}
+            - Path=/api/companies/**
 
 
 server:
@@ -32,4 +26,7 @@ eureka:
 
   instance:
     prefer-ip-address: true
+
+
+
 
