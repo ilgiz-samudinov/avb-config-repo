@@ -1,5 +1,5 @@
 server:
-  port: 8080
+  port: 8081
 
 spring:
   datasource:
@@ -14,4 +14,4 @@ spring:
 
 company:
   service:
-    url: http://localhost:8081
+    url: http://localhost:8082
