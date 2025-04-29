@@ -23,10 +23,9 @@ eureka:
   client:
     register-with-eureka: true
     fetch-registry: true
-
   instance:
     prefer-ip-address: true
 
-
-
-
+logging:
+  level:
+    org.springframework.cloud.gateway: DEBUG
