@@ -14,3 +14,7 @@ server:
           uri: lb://company-service
           predicates:
             - Path=/companies/**
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
