@@ -1,17 +1,23 @@
 server:
-  port: 8082
-
+  port: 8081
 spring:
+  application:
+    name: company-service
+
   datasource:
-    url: jdbc:postgresql://localhost:5432/company
+    url: jdbc:postgresql://localhost:5432/postgres
     username: ilgiz
     password: ilgiz
     driver-class-name: org.postgresql.Driver
-
   jpa:
     hibernate:
       ddl-auto: update
 
-user:
+company:
   service:
-    url: http://localhost:8081
+    url: http://localhost:8082
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
