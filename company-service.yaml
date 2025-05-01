@@ -13,10 +13,6 @@ spring:
     hibernate:
       ddl-auto: update
 
-user:
-  service:
-    url: http://user-service
-
 eureka:
   client:
     register-with-eureka: true

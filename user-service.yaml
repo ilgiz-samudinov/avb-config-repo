@@ -14,9 +14,6 @@ spring:
     hibernate:
       ddl-auto: update
 
-company:
-  service:
-    url: http://company-service
 
 eureka:
   client:
