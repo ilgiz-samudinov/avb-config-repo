@@ -16,7 +16,7 @@ spring:
 
 company:
   service:
-    url: http://localhost:8082
+    url: http://company-service
 
 eureka:
   client:
